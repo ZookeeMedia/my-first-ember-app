@@ -1,6 +1,5 @@
 import { notEmpty } from '@ember/object/computed';
 import DS from 'ember-data';
-import Faker from 'faker';
 
 export default DS.Model.extend({
 
@@ -10,8 +9,8 @@ export default DS.Model.extend({
   isValid: notEmpty('title'),
 
   randomize() {
-    this.set('title', Faker.company.companyName() + ' Articles');
-    this.set('content', Faker._content());
+    this.set('title', ' Articles');
+    this.set('content', '');
     return this;
   },
 
