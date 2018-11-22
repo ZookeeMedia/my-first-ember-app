@@ -1,0 +1,5 @@
+{{#each articles as |article|}}
+  <option value={{article.id}} selected={{is-equal article.id default.id}}>
+    {{article.title}}
+  </option>
+{{/each}}

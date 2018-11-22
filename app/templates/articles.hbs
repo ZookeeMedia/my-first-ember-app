@@ -1,0 +1,10 @@
+<h1>Articles</h1>
+
+<div class="well well-sm">
+    <ul class="nav nav-pills">
+      {{#link-to 'articles.index' tagName="li"}}<a href>List all</a>{{/link-to}}
+      {{#link-to 'articles.new' tagName="li"}}<a href>Add new</a>{{/link-to}}
+    </ul>
+</div>
+
+{{outlet}}
